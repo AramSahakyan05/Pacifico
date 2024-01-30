@@ -1,0 +1,62 @@
+.email-input {
+    background-color: #f2f7f8 !important;
+    text-align:center;
+    z-index: 0 !important;
+    padding: 150px 0 70px;
+    &-title > h2{
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: #2F362F;
+    }
+    > .input-btn {
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        > input {
+            width: 100%;
+            max-width: 500px;
+            height: 65px;
+            padding: 0 20px;
+            border: 2px solid #6B02FF;
+            background-color: #fff;
+            border-radius: 5px 0 0 5px;
+            color: #757575;
+            font-size: 17px;
+            outline: none;
+        }
+        > .btn {
+            width: 165px;
+            height: 65px;
+            background: #008aff; 
+            background: linear-gradient(135deg, var(--violet) 0%, var(--purple) 100%);
+            border: none;
+            color: #fff;
+            display: inline;
+            margin: 0 0 0 -5px;
+            border-radius: 0 5px 5px 0;
+            font-size: 14px;
+            font-weight: 700;
+            vertical-align: top;
+            transition: background-color .25s ease-in-out;
+        }
+    }
+    > .scrolled-form {
+        animation: formScroll 1s linear 1;
+    }
+}
+
+@keyframes formScroll {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(25px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

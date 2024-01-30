@@ -1,0 +1,25 @@
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+header > .logo > h1 {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 400;
+}
+.fixed-header {
+    width: 100%;
+    padding: 20px;
+    position: fixed!important;
+    background-color: #fff!important;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    transition: all .5s ease-in-out 0s;
+    z-index: 999 !important;
+}
+.fixed-header > .logo > h1 {
+    color: var(--black);
+}

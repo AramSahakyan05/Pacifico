@@ -1,0 +1,28 @@
+.abilities {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #f2f7f8 !important;
+    > div {
+        text-align: center;
+        >span {
+            color: #9e69c5;
+            font-size: 45px;
+            line-height: 54px;
+        }
+        > p.count {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 600;
+            font-style: normal;
+            color: #454545;
+        }
+        > p.description {
+            font-size: 16px;
+            font-weight: 400;
+            color: #7c8595;
+            font-style: italic;
+        }
+    }
+}

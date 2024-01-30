@@ -1,0 +1,46 @@
+.App {
+  /* background-image: url("./slider-bg1.jpg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.App-slider-container .react-slideshow-container > button {
+  display: none;
+}
+.react-slideshow-fadezoom-images-wrap > div{
+  width: 100%;
+   display: flex !important;
+  justify-content: center;
+}
+.App-slider-container {
+  position: fixed;
+  display: block;
+  width: 100vw;
+}
+.App-slider-container div {
+  height: 100vh;
+}
+.slider-image {
+  width:100vw
+}
+.blue-background {
+  position: absolute;
+  top: 0;
+  bottom: -900px;
+  right: 0;
+  left: 0;
+  background: linear-gradient(to left, rgba(18, 52, 87, 0.7), rgba(18, 52, 87, 0.7));
+  z-index: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.App > .container > header, footer {
+  z-index: 1;
+}
+.App > .container > main > div {
+  position: relative;
+  z-index: 1;
+  background-color: var(--white);
+}

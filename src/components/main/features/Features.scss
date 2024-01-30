@@ -1,0 +1,9 @@
+.features {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    &-collapse {
+        width: 48%;
+        padding: 30px 70px;
+    }
+}

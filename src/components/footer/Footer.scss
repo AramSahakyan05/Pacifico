@@ -1,0 +1,30 @@
+.footer {
+    background-color: #2f3539 !important;
+    border-top: 1px solid #393f43;
+    padding: 45px 0;
+    color: #cecece;
+    &-inner-context {
+        text-align: center;
+        > h4 {
+            font-weight: normal;
+            letter-spacing: 1px;
+            > a {
+                color: #6B02FF;
+            }
+        }
+        &-icons {
+            margin-top: 25px;
+            > svg {
+                width: 24px;
+                height: 24px;
+                margin: 0 7px;
+                color: #8d8d8d;
+                cursor: pointer;
+                transition: all .25s ease-in-out;
+                &:hover {
+                    color: #4285f4;
+                }
+            }
+        }
+    }
+}

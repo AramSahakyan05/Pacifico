@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+.user-plan {
+    padding: 70px 0;
+    &-head {
+        text-align: center;
+        > h1 {
+            margin: 15px 0;
+        }
+    }
+    &-body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 80px;
+        &-item {
+            width: 31%;
+            min-height: 550px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+            border: 2px solid #f8f8f8;
+            padding: 50px 0;
+            margin: 30px 0 20px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            transform: scale(0.9);
+            &:hover {
+                transform: scale(0.92);
+            }
+            &:nth-child(2) {
+                background-color: #f2f7f8;
+            }
+            &:nth-child(3) {
+                background: linear-gradient(135deg, var(--violet) 0%, var(--purple) 100%);
+                color: var(--white);
+                > div > p{
+                    color: var(--white);
+                }
+                > a {
+                    border: 2px solid;
+                    &:hover {
+                        color: #4285f4;
+                        border-color: var(--white);
+                        background: var(--white);
+                    }
+                }
+            }
+            > div {
+                > h1 {
+                    font-size: 72px;
+                    font-weight: normal;
+                    font-family: 'Roboto', sans-serif;
+                    margin: 7px 0;
+                }
+                > h2 {
+                    font-size: 18px;
+                    letter-spacing: 3px;
+                }
+                > p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    margin-bottom: 3px;
+                }
+            }
+            > a {
+                color: var(--white);
+                text-decoration: none;
+                border-radius: 5px 5px;
+                padding: 17px 32px;
+                display: inline-block;
+                line-height: 24px;
+                font-weight: 600;
+                margin: 40px 0 30px 0;
+                background: linear-gradient(135deg, var(--violet) 0%, var(--purple) 100%);
+                transition: all 0.5s ease;
+                &:hover {
+                    background: linear-gradient(135deg, var(--violet) 0%, var(--violet) 100%);
+                }
+            }
+        }
+    }
+}

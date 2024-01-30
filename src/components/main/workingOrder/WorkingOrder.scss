@@ -1,0 +1,33 @@
+.working-order {
+    min-height: 550px;
+    background-color: var(--white);
+    padding: 25px 30px;
+    text-align: center;
+    & > h1 {
+        margin-top: 70px;
+    }
+    & p {
+        line-height: 24px;
+        font-weight: 400;
+        color: #7c8595;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    & > p {
+        width: 620px;
+        margin: 15px auto 40px;
+        font-size: 16px;
+    }
+    &-content {
+        display: flex;
+        justify-content: space-around;
+        & > div {
+            width: 33%;
+            padding: 0 45px;
+            & > h3 {
+                margin: 20px 0;
+            }
+        }
+    }
+}
+

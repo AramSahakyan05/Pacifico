@@ -1,0 +1,8 @@
+.team {
+    padding: 55px;
+}
+.team > .team-members {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

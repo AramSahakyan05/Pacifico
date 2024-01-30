@@ -1,0 +1,15 @@
+.partners {
+    margin-top: 180px;
+    background-color: #f2f7f8 !important;
+    padding: 25px;
+    text-align: center;
+}
+.partners > img{
+    opacity: 0.4;
+    margin: 10px 25px;
+    max-height: 28px;
+    transition: all 0.25s ease-in-out;
+}
+.partners > img:hover {
+    opacity: 0.8;
+}

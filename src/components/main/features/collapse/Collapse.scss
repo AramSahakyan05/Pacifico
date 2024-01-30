@@ -1,0 +1,39 @@
+.collapse {
+    margin: 10px 0;
+    &-block {
+        margin-top: 40px;
+    }
+    > .each-collapse {
+        cursor: pointer;
+        margin: 0 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid;
+        color: #656565;
+        font-weight: 600;
+        > span {
+            padding: 10px 10px 15px;
+        }
+    }
+    &-description {
+        padding: 15px 30px;
+        transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #7c8595;
+        margin-bottom: 15px;
+    }
+    > .active {
+        animation: collapse .4s ease-in;
+        transform: translateY(5px)
+    }
+}
+
+@keyframes collapse {
+    0%{
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}

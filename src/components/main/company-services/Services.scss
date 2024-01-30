@@ -1,0 +1,48 @@
+.services {
+    background-color: #272834 !important;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    > div {
+        margin: 20px 0;
+    }
+    &-title {
+        text-align: center;
+        padding-bottom: 40px;
+        > h1 {
+            font-size: 36px;
+            line-height: 40px;
+            color: #292929;
+            margin-bottom: 15px;
+        }
+        > p {
+            margin: auto;
+            width: 610px;
+        }
+    }
+    .service-head {
+        color: #ddd;
+    }
+    .each-service {
+        padding: 0 15px;
+        margin: 10px 0 20px 0;
+        display: flex;
+        > img {
+            margin-bottom: 55px;
+        }
+        > .service-description {
+            width: 70%;
+            margin-left: 20px;
+        }
+    }
+    &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        > div {
+            width: 30%;
+        }
+    }
+}

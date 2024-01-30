@@ -1,0 +1,26 @@
+.extra-image {
+    width: 90%;
+    position: relative;
+    margin: 30px auto -200px;
+    z-index: 200;
+}
+img.phone-scrolled {
+    animation: phoneScroll 1s linear 1;
+}
+
+@keyframes phoneScroll {
+    0% {
+        transform: translateY(50px);
+        display: none;
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(25px);
+        opacity: 0.5;
+        display: block;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

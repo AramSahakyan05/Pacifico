@@ -1,0 +1,88 @@
+.latest-news {
+    padding: 80px;
+    background-color: #f2f7f8 !important;
+    &-head {
+        text-align: center;
+        > h1 {
+            margin: 10px 0;
+        }
+    }
+    &-body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &-item {
+            width: 31%;
+            min-height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: 2px solid #f8f8f8;
+            padding: 50px 0;
+            margin: 30px 0 20px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            > .news-img {
+                position: relative;
+                cursor: pointer;
+                > img {
+                    width: 100%;
+                }
+                > div.black-background {
+                    background-color: #000;
+                    position: absolute;
+                    overflow: hidden;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all .25s ease-in-out;
+                }
+                &:hover div.black-background {
+                    opacity: 0.7;
+                }
+            }
+            > h3 {
+                margin: 25px 0 10px 0;
+                color: #454545;
+                font-size: 21px;
+            }
+            > span {
+                display: inline-block;
+            }
+            > .name-pos {
+                margin-bottom: 20px;
+                > span{
+                    color: #858585;
+                    font-size: 14px;
+                    font-style: italic;
+                    margin-right: 10px;
+                    padding-right: 10px;
+                }
+                > span:nth-child(1) {
+                    padding-right: 15px;
+                    border-right: 1px solid #858585;
+                }
+            }
+            > a {
+                color: var(--white);
+                text-decoration: none;
+                border-radius: 5px 5px;
+                padding: 17px 32px;
+                width: 150px;
+                display: inline-block;
+                line-height: 24px;
+                font-weight: 600;
+                margin: 40px 0 30px 0;
+                background: linear-gradient(135deg, var(--violet) 0%, var(--purple) 100%);
+                transition: all 0.5s ease;
+                &:hover {
+                    background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 100%);
+                }
+            }
+        }
+    }
+}

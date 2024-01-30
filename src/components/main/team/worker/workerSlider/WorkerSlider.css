@@ -1,0 +1,7 @@
+.worker-image {
+    max-width: 140px;
+    margin: 20px auto;
+    padding: 6px 6px;
+    background-color: #dedede;
+    border-radius: 50%;
+}
